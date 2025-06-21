@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar'; // Assure-toi du bon chemin selon ta structure
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      {/* Contenu de démo pour tester la navbar */}
+      <section style={{ padding: '100px 20px', textAlign: 'center' }}>
+        <h1>Bienvenue sur MyBrand</h1>
+        <p>Voici du contenu de démonstration sous la barre de navigation.</p>
+      </section>
     </div>
   );
 }
